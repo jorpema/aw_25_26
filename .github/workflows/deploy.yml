@@ -19,5 +19,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./     # Carpeta de tu repo que quieres subir
-        server-dir: ./    # Ajusta esto según la ruta de AwardSpace (ej: /tu-dominio.com/htdocs/)
+        local-dir: ./     
+        server-dir: ./home/www
