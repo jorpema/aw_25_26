@@ -3,7 +3,7 @@ name: Despliegue a AwardSpace
 on:
   push:
     branches:
-      - main  # Se ejecutará cada vez que subas cambios a la rama main
+      - main
 
 jobs:
   web-deploy:
@@ -19,5 +19,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./     
-        server-dir: ./home/www/jorpema.mywebcommunity.org
+        port: 21
+        local-dir: ./
+        server-dir: /jorpema.mywebcommunity.org/
